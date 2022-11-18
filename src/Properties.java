@@ -1,10 +1,10 @@
 import java.awt.*;
 
 public class Properties {
-    Color col;
+    String col;
     boolean owned = false;
     int price,housePrice,baseRent,rentOne,rentTwo,rentThree,rentFour,rentHotel;
-    Properties(Color hi, int a,int b, int c,int d,int e,int f,int g, int h){
+    Properties(String hi, int a,int b, int c,int d,int e,int f,int g, int h){
         //https://www.falstad.com/monopoly.html
         col = hi;
         price = a;
@@ -45,7 +45,7 @@ public class Properties {
         return rentThree;
     }
 
-    public Color getCol() {
+    public String getCol() {
         return col;
     }
 
@@ -57,7 +57,7 @@ public class Properties {
         this.baseRent = baseRent;
     }
 
-    public void setCol(Color col) {
+    public void setCol(String col) {
         this.col = col;
     }
 
