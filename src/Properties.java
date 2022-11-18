@@ -17,6 +17,7 @@ public class Properties {
         rentHotel = h;
     }
 
+    //get methods
     public int getBaseRent() {
         return baseRent;
     }
@@ -53,6 +54,7 @@ public class Properties {
         return rentTwo;
     }
 
+    //set methods
     public void setBaseRent(int baseRent) {
         this.baseRent = baseRent;
     }
