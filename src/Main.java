@@ -1,13 +1,8 @@
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.io.*;
+import java.lang.*;
 
 public class Main {
-    private Set<Properties> set;
-
-    public void Main() {
-        set = new HashSet<>();
-    }
-    public void initializeCards() {
         Properties MediterraneanAvenue = new Properties("Purple", 60, 50, 2, 10, 30, 90, 160, 250);
         Properties BalticAvenue = new Properties("Purple", 60, 50, 4, 20, 60, 180, 320, 450);
         Properties OrientalAvenue = new Properties("LightBlue", 100, 50, 6, 30, 90, 270, 400, 550);
@@ -31,20 +26,14 @@ public class Main {
         Properties ParkPlace = new Properties("Blue", 350, 200, 35, 175, 500, 100, 1300, 1500);
         Properties Boardwalk = new Properties("Blue", 400, 200, 50, 200, 600, 1400, 1700, 2000);
 
-        map.add(MediterraneanAvenue);
-
-
-    }
 
     public void game() {
         System.out.print("hi");
-
-
+        System.out.print(NewYorkAvenue.getPrice());
     }
 
     public static void main(String[] args) {
         Main m = new Main();
-        m.initializeCards();
         m.game();
 
 
