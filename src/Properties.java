@@ -3,18 +3,19 @@ import java.awt.*;
 public class Properties {
     String col;
     boolean owned = false;
-    int price,housePrice,baseRent,rentOne,rentTwo,rentThree,rentFour,rentHotel;
-    Properties(String color, int a,int b, int c,int d,int e,int f,int g, int h){
+    private int price,housePrice,baseRent,rentOne,rentTwo,rentThree,rentFour,rentHotel;
+
+    Properties(String color, int pric,int ppHouse, int RentB,int Rent1,int Rent2,int Rent3,int Rent4, int RentH){
         //https://www.falstad.com/monopoly.html
         col = color;
-        price = a;
-        housePrice=b;
-        baseRent=c;
-        rentOne=d;
-        rentTwo=e;
-        rentThree=f;
-        rentFour = g;
-        rentHotel = h;
+        price = pric;
+        housePrice=ppHouse;
+        baseRent=RentB;
+        rentOne=Rent1;
+        rentTwo=Rent2;
+        rentThree=Rent3;
+        rentFour = Rent4;
+        rentHotel = RentH;
     }
 
     //get methods
@@ -27,6 +28,7 @@ public class Properties {
     }
 
     public int getPrice() {
+        System.out.println("chicken");
         return price;
     }
 
@@ -54,43 +56,9 @@ public class Properties {
         return rentTwo;
     }
 
+//----------
+
     //set methods
-    public void setBaseRent(int baseRent) {
-        this.baseRent = baseRent;
-    }
-
-    public void setCol(String col) {
-        this.col = col;
-    }
-
-    public void setHousePrice(int housePrice) {
-        this.housePrice = housePrice;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setRentFour(int rentFour) {
-        this.rentFour = rentFour;
-    }
-
-    public void setRentHotel(int rentHotel) {
-        this.rentHotel = rentHotel;
-    }
-
-    public void setRentOne(int rentOne) {
-        this.rentOne = rentOne;
-    }
-
-    public void setRentThree(int rentThree) {
-        this.rentThree = rentThree;
-    }
-
-    public void setRentTwo(int rentTwo) {
-        this.rentTwo = rentTwo;
-    }
-
     public void isOwned(boolean a) {
         this.owned = a;
     }
