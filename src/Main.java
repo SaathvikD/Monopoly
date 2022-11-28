@@ -48,9 +48,14 @@ public class Main {
     }
 
     public void boardLocation(int location){
-        //40 spots on the board. "GO" is spot 40
+        //40 spots on the board. "GO" is spot 0
         //Method will have 40 "if" statements and call the necessary methods for each spot on the board to do the right thing
         //This is the "God Method"
+        // @ 40 reset location to 0
+        int a = location;
+        if(a==0){
+    if(a==0)
+        }
     }
 
     //All railroads have the same rent. Will use player class to keep track of how many railroads are owned
